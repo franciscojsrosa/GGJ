@@ -22,7 +22,11 @@ public class MoveObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(isHolding)
+		{
+			item.transform.position = guide.transform.position;
+			item.transform.rotation = guide.transform.rotation;
+		}
     }
 
 	void OnMouseDown()
