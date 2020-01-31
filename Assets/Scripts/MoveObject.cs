@@ -10,7 +10,7 @@ public class MoveObject : MonoBehaviour
 	public Transform guide;
 
 	private Rigidbody rb;
-	private bool isHolding;
+	public bool isHolding;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +25,15 @@ public class MoveObject : MonoBehaviour
     {
 		if (Input.GetMouseButtonDown(1))
 		{
+			if(isHolding)
+			{
+				rb.useGravity = true;
+				rb.isKinematic = false;
+				item.transform.parent = null;
+				item.transform.position = guide.transform.position;
+				isHolding = false;
+				return;
+			}
 
 			var mainCamera = FindCamera();
 
@@ -32,7 +41,7 @@ public class MoveObject : MonoBehaviour
 			RaycastHit hit = new RaycastHit();
 			if (
 				!Physics.Raycast(mainCamera.ScreenPointToRay(Input.mousePosition).origin,
-								 mainCamera.ScreenPointToRay(Input.mousePosition).direction, out hit, 100,
+								 mainCamera.ScreenPointToRay(Input.mousePosition).direction, out hit, 3,
 								 Physics.DefaultRaycastLayers))
 			{
 				return;
@@ -48,15 +57,6 @@ public class MoveObject : MonoBehaviour
 					//item.transform.rotation = guide.transform.rotation;
 					item.transform.parent = tempParent.transform;
 					isHolding = true;
-					return;
-				}
-				else
-				{
-					rb.useGravity = true;
-					rb.isKinematic = false;
-					item.transform.parent = null;
-					item.transform.position = guide.transform.position;
-					isHolding = false;
 					return;
 				}
 			}
