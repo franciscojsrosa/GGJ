@@ -22,11 +22,7 @@ public class MoveObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isHolding)
-		{
-			item.transform.position = guide.transform.position;
-			item.transform.rotation = guide.transform.rotation;
-		}
+       
     }
 
 	void OnMouseDown()
@@ -36,7 +32,6 @@ public class MoveObject : MonoBehaviour
 			rb.useGravity = false;
 			rb.isKinematic = true;
 			item.transform.position = guide.transform.position;
-			item.transform.rotation = guide.transform.rotation;
 			item.transform.parent = tempParent.transform;
 			isHolding = true;
 		}
