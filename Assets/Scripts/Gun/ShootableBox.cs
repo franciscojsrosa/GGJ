@@ -11,11 +11,16 @@ public class ShootableBox : MonoBehaviour {
 		//subtract damage amount when Damage function is called
 		currentHealth -= damageAmount;
 
-		//Check if health has fallen below zero
-		if (currentHealth <= 0) 
-		{
-			//if health has fallen below zero, deactivate it 
-			gameObject.SetActive (false);
+		if(currentHealth <= 0){
+			this.GetComponent<Rigidbody>().isKinematic = false;	
 		}
+		//Check if health has fallen below zero
+		//if health has fallen below zero, deactivate it 
+
+		//gameObject.SetActive (false);
+	}
+
+	void Update(){	
+
 	}
 }
