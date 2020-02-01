@@ -5,17 +5,15 @@ using UnityEngine;
 public class MoveObject : MonoBehaviour
 {
 
-	public GameObject item;
 	public GameObject tempParent;
-	public Transform guide;
 
 	private Rigidbody rb;
-	public bool isHolding;
+	private bool isHolding;
 
     // Start is called before the first frame update
     void Start()
     {
-		rb = item.GetComponent<Rigidbody>();
+		rb = gameObject.GetComponent<Rigidbody>();
 		rb.useGravity = true;
 		isHolding = false;
     }
@@ -29,8 +27,8 @@ public class MoveObject : MonoBehaviour
 			{
 				rb.useGravity = true;
 				rb.isKinematic = false;
-				item.transform.parent = null;
-				item.transform.position = guide.transform.position;
+                gameObject.transform.parent = null;
+                gameObject.transform.position = tempParent.transform.position;
 				isHolding = false;
 				return;
 			}
@@ -53,12 +51,12 @@ public class MoveObject : MonoBehaviour
 				{
 					rb.useGravity = false;
 					rb.isKinematic = true;
-					item.transform.position = guide.transform.position;
-					if (item.tag == "Gun")
+                    gameObject.transform.position = tempParent.transform.position;
+					if (gameObject.tag == "Gun")
 					{
-						item.transform.rotation = guide.transform.rotation;
+                        gameObject.transform.rotation = tempParent.transform.rotation;
 					}
-					item.transform.parent = tempParent.transform;
+                    gameObject.transform.parent = tempParent.transform;
 					isHolding = true;
 					return;
 				}

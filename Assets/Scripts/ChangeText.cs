@@ -18,35 +18,41 @@ public class ChangeText : MonoBehaviour
 	public AudioSource terminal;
 	private Text screenText;
 	private int textNum;
+    private bool lightdone;
 
     // Start is called before the first frame update
     void Start()
     {
 		screenText = this.GetComponent<Text>();
 		textNum = 1;
+        lightdone = false;
 	}
 
     // Update is called once per frame
-    void Update()
+   
+
+    public void LightIsHere()
     {
-		if(lightbulb != null && (lightbulb.transform.position - spotlight.transform.position).sqrMagnitude < 1 && spotlight.activeSelf)
-		{
-			lightbulb.transform.parent = null;
-			lightbulb.transform.position = spotlight.transform.position;
-			lightbulb.transform.rotation = new Quaternion(180f, 0f, 0f, 0f);
-			spotlight.SetActive(false);
-			screw.Play();
-			textNum = 1;
-			terminal.Play();	
-			screenText.text = ">>This is the Debug Room, you're not supposed to be here at all.\n>>Oh God, my boss is gonna kill me.\n>>And the lightbulb went out again.\n>>Could you please fix that?\n>>Thanks for that one.";
-		}
+        if (!lightdone)
+        {
+            lightdone = true;
+            spotlight.SetActive(false);
+            screw.Play();
+            textNum = 1;
+            terminal.Play();
+            screenText.text = ">>This is the Debug Room, you're not supposed to be here at all." +
+                "\n>>Oh God, my boss is gonna kill me." +
+                "\n>>And the lightbulb went out again." +
+                "\n>>Could you please fix that?\n>>Thanks for that one.";
+        }
+        
     }
 
 	void OnMouseDown()
 	{
 		if (!spotlight.activeSelf)
 		{
-			terminal.Play();
+            Debug.Log(textNum);
 			if (textNum == 1)
 				screenText.text = ">>Oh God, my boss is gonna kill me.\n>>And the lightbulb went out again.\n>>Could you please fix that?\n>>Thanks for that one.\n>>You might have figured out this isn't the actual game by now.";
 			if (textNum == 2)
