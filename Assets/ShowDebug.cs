@@ -6,28 +6,37 @@ public class ShowDebug : MonoBehaviour
 {
 	public GameObject targets;
 	public GameObject debugRoom;
+	public GameObject gun;
+
+	private bool done;
 
 	// Start is called before the first frame update
 	void Start()
     {
-        
+		done = false;   
     }
 
     // Update is called once per frame
     void Update()
     {
-		int rot = 0;
-        foreach(Transform child in targets.transform)
+		if (!done)
 		{
-			Rigidbody rb = child.GetComponent<Rigidbody>();
-			if (!rb.isKinematic)
+			int rot = 0;
+			foreach (Transform child in targets.transform)
 			{
-				rot += 1;
+				Rigidbody rb = child.GetComponent<Rigidbody>();
+				if (!rb.isKinematic)
+				{
+					rot += 1;
+				}
 			}
-		}
-		if(rot >= 3)
-		{
-			debugRoom.SetActive(true);
+			if (rot >= 3)
+			{
+				debugRoom.SetActive(true);
+				gun.transform.parent = null;
+				gun.SetActive(false);
+				done = true;
+			}
 		}
     }
 }

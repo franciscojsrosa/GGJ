@@ -1580,6 +1580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targets: {fileID: 831756795}
   debugRoom: {fileID: 2134091569}
+  gun: {fileID: 1099853818}
 --- !u!1 &838677079 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 876a9efcae3245e4ab66feeb8f437976,
