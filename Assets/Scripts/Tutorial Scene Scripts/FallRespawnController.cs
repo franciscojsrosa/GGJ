@@ -19,10 +19,10 @@ public class FallRespawnController : MonoBehaviour
     {
         if(player.transform.position.y < -100)
         {
+            player.SetActive(false);
             //Respawn and take away velocity
             player.transform.position = SpawnPosition;
-            //player.GetComponent<Rigidbody>().velocity = Vector3.zero;
-            player.GetComponent<Rigidbody>().isKinematic = false;
+            player.SetActive(true);
         }
     }
 }
