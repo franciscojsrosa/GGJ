@@ -2053,7 +2053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targets: {fileID: 831756795}
-  debugRoom: {fileID: 5867173972416299789}
+  debugRoom: {fileID: 5640650435022881017}
   formerGun: {fileID: 244802799}
   brokenGun: {fileID: 1724577473}
   explodedGun: {fileID: 1001762525}
@@ -4660,8 +4660,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930010870}
-  m_LocalRotation: {x: 0.74252653, y: -0.61422, z: -0.18828523, w: 0.18957007}
-  m_LocalPosition: {x: 9.8648, y: -22.272, z: 4.1024}
+  m_LocalRotation: {x: 0.7321773, y: -0.66600573, z: -0.12859596, w: 0.061772227}
+  m_LocalPosition: {x: 27.788, y: -35.148, z: 7.363}
   m_LocalScale: {x: 0.46554384, y: 0.4126402, z: 0.535387}
   m_Children:
   - {fileID: 4723370}
@@ -4669,7 +4669,7 @@ Transform:
   - {fileID: 964463481}
   m_Father: {fileID: 0}
   m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 2.8790002, y: -149.12701, z: -100.01}
+  m_LocalEulerAnglesHint: {x: -4.637, y: -164.248, z: -96.061005}
 --- !u!1 &1935707273 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8051415255134806348, guid: c89bd9a23c62a944b937b7e28aebd337,
@@ -6607,7 +6607,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &5640650435031636968
 BoxCollider:
   m_ObjectHideFlags: 0

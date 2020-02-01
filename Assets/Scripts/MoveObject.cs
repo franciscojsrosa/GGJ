@@ -10,7 +10,6 @@ public class MoveObject : MonoBehaviour
 	private Rigidbody rb;
 	public bool isHolding;
 
-    // Start is called before the first frame update
     void Start()
     {
 		rb = gameObject.GetComponent<Rigidbody>();

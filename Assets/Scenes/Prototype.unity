@@ -844,9 +844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3308179d061a5c84392a69b81314c09e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 876691031}
   tempParent: {fileID: 1611186267}
-  guide: {fileID: 1611186268}
   isHolding: 0
 --- !u!54 &876691037
 Rigidbody:
@@ -986,9 +984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3308179d061a5c84392a69b81314c09e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 1213289678}
   tempParent: {fileID: 1611186267}
-  guide: {fileID: 1611186268}
   isHolding: 0
 --- !u!1 &1274161112
 GameObject:
@@ -1501,9 +1497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3308179d061a5c84392a69b81314c09e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 1907993209}
   tempParent: {fileID: 1611186267}
-  guide: {fileID: 1611186268}
   isHolding: 0
 --- !u!114 &1907993212
 MonoBehaviour:
