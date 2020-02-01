@@ -247,6 +247,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FenceMat
       objectReference: {fileID: 0}
+    - target: {fileID: 8704912888454106801, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5662513462472883362, guid: 145d32ee24e8ec94899692fd73238142,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -302,6 +307,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8270138391941852797, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802219724031971505, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2978674250237298049, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387896078038726557, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 145d32ee24e8ec94899692fd73238142, type: 3}
 --- !u!1001 &58433550
@@ -315,6 +340,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FenceMat (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8704912888454106801, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5662513462472883362, guid: 145d32ee24e8ec94899692fd73238142,
         type: 3}
@@ -370,6 +400,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8270138391941852797, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802219724031971505, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2978674250237298049, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387896078038726557, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 145d32ee24e8ec94899692fd73238142, type: 3}
@@ -1378,6 +1428,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FenceMat (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8704912888454106801, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5662513462472883362, guid: 145d32ee24e8ec94899692fd73238142,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1432,6 +1487,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8270138391941852797, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802219724031971505, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2978674250237298049, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387896078038726557, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 145d32ee24e8ec94899692fd73238142, type: 3}
@@ -2115,6 +2190,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FenceMat (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8704912888454106801, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5662513462472883362, guid: 145d32ee24e8ec94899692fd73238142,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2169,6 +2249,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8270138391941852797, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802219724031971505, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2978674250237298049, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387896078038726557, guid: 145d32ee24e8ec94899692fd73238142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 145d32ee24e8ec94899692fd73238142, type: 3}
@@ -2502,9 +2602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3308179d061a5c84392a69b81314c09e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 1001762525}
   tempParent: {fileID: 1201970900}
-  guide: {fileID: 1201970901}
   isHolding: 0
 --- !u!54 &1001762527
 Rigidbody:
@@ -2862,9 +2960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3308179d061a5c84392a69b81314c09e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 1099853818}
   tempParent: {fileID: 1201970900}
-  guide: {fileID: 1201970901}
   isHolding: 0
 --- !u!114 &1099853823
 MonoBehaviour:
@@ -2950,7 +3046,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1201970901}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Grab Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4517,9 +4613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3308179d061a5c84392a69b81314c09e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 1930010870}
   tempParent: {fileID: 1201970900}
-  guide: {fileID: 1201970901}
   isHolding: 0
 --- !u!114 &1930010875
 MonoBehaviour:
@@ -5016,6 +5110,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.92
@@ -5075,6 +5173,14 @@ PrefabInstance:
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_WalkSpeed
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: near clip plane
+      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
@@ -5921,8 +6027,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5640650434147656417}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.42, y: -22.914, z: 27.65}
-  m_LocalScale: {x: 0.35419464, y: 0.35419464, z: 0.35419464}
+  m_LocalPosition: {x: 15.42, y: -23.043, z: 27.65}
+  m_LocalScale: {x: 0.3, y: 0.4163026, z: 0.2}
   m_Children:
   - {fileID: 5640650434034996933}
   - {fileID: 5640650434613924181}
@@ -6042,7 +6148,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -7719,9 +7825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3308179d061a5c84392a69b81314c09e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 5867173972035239765}
   tempParent: {fileID: 0}
-  guide: {fileID: 0}
   isHolding: 0
 --- !u!65 &5867173972035239764
 BoxCollider:
