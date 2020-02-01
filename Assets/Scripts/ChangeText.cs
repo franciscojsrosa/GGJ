@@ -37,7 +37,7 @@ public class ChangeText : MonoBehaviour
 			spotlight.SetActive(false);
 			screw.Play();
 			textNum = 1;
-			terminal.Play();
+			terminal.Play();	
 			screenText.text = ">>This is the Debug Room, you're not supposed to be here at all.\n>>Oh God, my boss is gonna kill me.\n>>And the lightbulb went out again.\n>>Could you please fix that?\n>>Thanks for that one.";
 		}
     }
