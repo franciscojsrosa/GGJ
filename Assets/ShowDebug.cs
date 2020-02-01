@@ -6,7 +6,9 @@ public class ShowDebug : MonoBehaviour
 {
 	public GameObject targets;
 	public GameObject debugRoom;
-	public GameObject gun;
+	public GameObject formerGun;
+	public GameObject brokenGun;
+	public GameObject explodedGun;
 
 	private bool done;
 
@@ -33,8 +35,9 @@ public class ShowDebug : MonoBehaviour
 			if (rot >= 3)
 			{
 				debugRoom.SetActive(true);
-				gun.transform.parent = null;
-				gun.SetActive(false);
+				formerGun.SetActive(false);
+				brokenGun.SetActive(true);
+				explodedGun.SetActive(true);
 				done = true;
 			}
 		}
