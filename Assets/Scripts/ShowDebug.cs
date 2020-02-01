@@ -10,6 +10,7 @@ public class ShowDebug : MonoBehaviour
 	public GameObject formerGun;
 	public GameObject brokenGun;
 	public GameObject explodedGun;
+	public GameObject gun;
 
 	public int nextScene;
 
@@ -37,6 +38,7 @@ public class ShowDebug : MonoBehaviour
 			}
 			if (rot >= 3)
 			{
+				gun.GetComponent<RayCastShootComplete>().enabled = false;
 				debugRoom.SetActive(true);
 				formerGun.SetActive(false);
 				brokenGun.SetActive(true);
