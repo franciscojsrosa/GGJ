@@ -87,7 +87,11 @@ public class ChangeText : MonoBehaviour
 			if (textNum == 6)
 				screenText.text = ">>...\n>>Uhh...\n>>Hello there.\n>>How did you get here?\n>>This is the Debug Room, you're not supposed to be here at all.\n>>Oh God, my boss is gonna kill me.";
             if (textNum == 7)
+            {
                 RoomLight.TurnOff();
+                FindObjectOfType<ParticleSystem>().Play();
+            }
+                
 			if (textNum == 8)
 				screenText.text = ">>Uhh...\n>>Hello there.\n>>How did you get here?\n>>This is the Debug Room, you're not supposed to be here at all.\n>>Oh God, my boss is gonna kill me.\n>>And the lightbulb went out again.";
 			if (textNum == 9)
