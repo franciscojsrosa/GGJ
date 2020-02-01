@@ -8,7 +8,6 @@ public class ChangeText : MonoBehaviour
 {
     public LightBehaviourMaterial RoomLight;
 	public GameObject pcLight;
-	public GameObject player;
 	public GameObject lightbulb;
 	public GameObject spotlight;
 	public int nextScene;

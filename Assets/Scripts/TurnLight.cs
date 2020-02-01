@@ -28,7 +28,7 @@ public class TurnLight : MonoBehaviour
 
 	void OnMouseDown()
 	{
-		if ((light.transform.position - player.transform.position).sqrMagnitude < 2 && !turnedOn)
+		if ((light.transform.position - player.transform.position).sqrMagnitude < 1 && !turnedOn)
         {
             turnedOn = true;
             buttonlight.ChangeMat();

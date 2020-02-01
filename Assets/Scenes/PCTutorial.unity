@@ -6909,6 +6909,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5867173972467565141, guid: 70a6b0c279b131547b7f11428a0183b0,
+        type: 3}
+      propertyPath: lightbulb
+      value: 
+      objectReference: {fileID: 131495442}
     - target: {fileID: 5867173970894912486, guid: 70a6b0c279b131547b7f11428a0183b0,
         type: 3}
       propertyPath: m_Range
