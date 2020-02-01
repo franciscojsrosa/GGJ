@@ -15,6 +15,7 @@ public class ChangeText : MonoBehaviour
 
 	public AudioSource screw;
 
+
 	public AudioSource terminal;
 	private Text screenText;
 	private int textNum;
@@ -26,6 +27,7 @@ public class ChangeText : MonoBehaviour
 		screenText = this.GetComponent<Text>();
 		textNum = 1;
         lightdone = false;
+        RoomLight.TurnOff();
 	}
 
     // Update is called once per frame
