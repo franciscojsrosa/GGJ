@@ -10,6 +10,8 @@ public class ShootableBox : MonoBehaviour {
 	public void Damage(int damageAmount)
 	{
 		//subtract damage amount when Damage function is called
+		var text = this.transform.GetChild(0).GetComponent<TextMesh>().text;
+
 		currentHealth -= damageAmount;
 
 		this.transform.GetChild(0).GetComponent<TextMesh>().text = currentHealth + "/3";
@@ -17,6 +19,7 @@ public class ShootableBox : MonoBehaviour {
 		if (currentHealth <= 0){
 			this.GetComponent<Rigidbody>().isKinematic = false;	
 		}
+
 		//Check if health has fallen below zero
 		//if health has fallen below zero, deactivate it 
 
