@@ -8,7 +8,7 @@ public class MoveObject : MonoBehaviour
 	public GameObject tempParent;
 
 	private Rigidbody rb;
-	private bool isHolding;
+	public bool isHolding;
 
     // Start is called before the first frame update
     void Start()
