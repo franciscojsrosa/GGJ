@@ -460,7 +460,7 @@ MonoBehaviour:
   player: {fileID: 350355289}
   lightbulb: {fileID: 0}
   spotlight: {fileID: 0}
-  nextScene: 0
+  nextScene: 4
   screw: {fileID: 254286214}
   terminal: {fileID: 254286215}
 --- !u!65 &254286212
