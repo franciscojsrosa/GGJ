@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/TheEnd.unity
     guid: b594beeb33297da4eaa8a9ed21f351d2
   - enabled: 1
+    path: Assets/Scenes/BeforeEnd.unity
+    guid: 9c6497f891022b24195441fc2f8a5cdd
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 9b81b228ec4263c43a53a43b53c9eff8
+  - enabled: 1
     path: Assets/Scenes/SecondLevel.unity
     guid: cdb7c3d6f8574e24a96171d534f88df1
   - enabled: 1

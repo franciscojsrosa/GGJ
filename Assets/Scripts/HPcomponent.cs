@@ -6,11 +6,13 @@ public class HPcomponent : MonoBehaviour
 {
     public float currHP;
     public float maxHP;
+    private float start;
 
     void Start()
     {
         maxHP = 10;
         currHP = maxHP;
+        start = Time.time;
     }
 
     public void SetHP(int hp)
@@ -30,6 +32,11 @@ public class HPcomponent : MonoBehaviour
 
     void Update()
     {
+        if (Time.time - start > 1)
+        {
+            start = Time.time;
+            LowerHP(1);
+        }
         transform.localScale = new Vector3(transform.localScale.x, (currHP / maxHP), transform.localScale.z);
     }
 }

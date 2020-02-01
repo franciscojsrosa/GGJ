@@ -8,12 +8,12 @@ public class ChangeText : MonoBehaviour
 {
     public LightBehaviourMaterial RoomLight;
 	public GameObject pcLight;
-	public GameObject player;
 	public GameObject lightbulb;
 	public GameObject spotlight;
 	public int nextScene;
 
 	public AudioSource screw;
+
 
 	public AudioSource terminal;
 	private Text screenText;
@@ -26,6 +26,7 @@ public class ChangeText : MonoBehaviour
 		screenText = this.GetComponent<Text>();
 		textNum = 1;
         lightdone = false;
+        RoomLight.TurnOff();
 	}
 
     // Update is called once per frame

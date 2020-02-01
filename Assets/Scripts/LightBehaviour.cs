@@ -18,6 +18,6 @@ public class LightBehaviour : MonoBehaviour
 
     public virtual void TurnOn()
     {
-        lightObj.enabled = false;
+        lightObj.enabled = true;
     }
 }
