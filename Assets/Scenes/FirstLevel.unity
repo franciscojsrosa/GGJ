@@ -1850,7 +1850,7 @@ MonoBehaviour:
   formerGun: {fileID: 244802799}
   brokenGun: {fileID: 1724577473}
   explodedGun: {fileID: 1001762525}
-  nextScene: 0
+  nextScene: 3
 --- !u!1 &838677079 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 876a9efcae3245e4ab66feeb8f437976,
