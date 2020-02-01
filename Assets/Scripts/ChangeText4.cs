@@ -29,6 +29,7 @@ public class ChangeText4 : MonoBehaviour
 
 	void OnMouseDown()
 	{
+		Debug.Log(textNum);
 		terminal.Play();
 		if (textNum == 1)
 			screenText.text = ">>I can see that didn't go exactly as expected.\n>>But that's okay.";
@@ -43,7 +44,7 @@ public class ChangeText4 : MonoBehaviour
 			screenText.text = ">>But that's okay.\n>>We all make mistakes\n>>I'm sure you will try not to fuck it up next time.\n>>Meanwhile, I think you can apologize by fixing the mess you made.\n>>I'll even give you the latest fixing technology, because I'm that generous.";
 			fixer.SetActive(true);
 		}
-		if (textNum == 8)
+		//if (textNum == 8)
 			//SceneManager.LoadScene(nextScene);
 		textNum += 1;
 	}
