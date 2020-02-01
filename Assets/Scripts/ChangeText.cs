@@ -13,6 +13,9 @@ public class ChangeText : MonoBehaviour
 	public GameObject spotlight;
 	public int nextScene;
 
+	public AudioSource screw;
+
+	public AudioSource terminal;
 	private Text screenText;
 	private int textNum;
 
@@ -32,8 +35,9 @@ public class ChangeText : MonoBehaviour
 			lightbulb.transform.position = spotlight.transform.position;
 			lightbulb.transform.rotation = new Quaternion(180f, 0f, 0f, 0f);
 			spotlight.SetActive(false);
-			//lightbulb screw sound
+			screw.Play();
 			textNum = 1;
+			terminal.Play();	
 			screenText.text = ">>This is the Debug Room, you're not supposed to be here at all.\n>>Oh God, my boss is gonna kill me.\n>>And the lightbulb went out again.\n>>Could you please fix that?\n>>Thanks for that one.";
 		}
     }
@@ -42,6 +46,7 @@ public class ChangeText : MonoBehaviour
 	{
 		if (!spotlight.activeSelf)
 		{
+			terminal.Play();
 			if (textNum == 1)
 				screenText.text = ">>Oh God, my boss is gonna kill me.\n>>And the lightbulb went out again.\n>>Could you please fix that?\n>>Thanks for that one.\n>>You might have figured out this isn't the actual game by now.";
 			if (textNum == 2)
@@ -55,13 +60,14 @@ public class ChangeText : MonoBehaviour
 			if (textNum == 6)
 				screenText.text = ">>I would appreciate your understanding.\n>>And maybe I could use some help.\n>>Nah, forget that, this will work fine.\n>>Let me just send you on the right way.";
 			if (textNum == 7)
-				screenText.text = ">>I would appreciate your understanding.\n>>And maybe I could use some help.\n>>Nah, forget that, this will work fine.\n>>Let me just send you on the right way.\n>>Loading de_dust2...";
+				screenText.text = ">>I would appreciate your understanding.\n>>And maybe I could use some help.\n>>Nah, forget that, this will work fine.\n>>Let me just send you on the right way.\nLoading de_dust2...";
 			if (textNum == 8)
 				SceneManager.LoadScene(nextScene);
 			textNum += 1;
 		}
-		else if (pcLight.activeSelf)
+		else if (pcLight.activeSelf && textNum < 10)
 		{
+			terminal.Play();
 			if (textNum == 1)
 				screenText.text = ">>...";
 			if (textNum == 2)
