@@ -59,8 +59,14 @@ public class ShowDebug : MonoBehaviour
 			}
 			if (rot >= 4)
 			{
-				SceneManager.LoadScene(nextScene);
+				StartCoroutine(EndCoroutine());
 			}
 		}
     }
+
+	IEnumerator EndCoroutine()
+	{
+		yield return new WaitForSeconds(3);
+		SceneManager.LoadScene(nextScene);
+	}
 }
