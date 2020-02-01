@@ -1850,6 +1850,7 @@ MonoBehaviour:
   formerGun: {fileID: 244802799}
   brokenGun: {fileID: 1724577473}
   explodedGun: {fileID: 1001762525}
+  gun: {fileID: 1099853818}
   nextScene: 3
 --- !u!1 &838677079 stripped
 GameObject:
@@ -2762,7 +2763,7 @@ MonoBehaviour:
   fireRate: 0.25
   weaponRange: 50
   hitForce: 100
-  gunEnd: {fileID: 1099853826}
+  gunEnd: {fileID: 244802800}
 --- !u!33 &1099853825
 MeshFilter:
   m_ObjectHideFlags: 0
