@@ -352,11 +352,11 @@ GameObject:
   - component: {fileID: 254286210}
   - component: {fileID: 254286209}
   - component: {fileID: 254286208}
-  - component: {fileID: 254286211}
   - component: {fileID: 254286212}
   - component: {fileID: 254286213}
   - component: {fileID: 254286214}
   - component: {fileID: 254286215}
+  - component: {fileID: 254286216}
   m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
@@ -444,26 +444,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254286206}
   m_CullTransparentMesh: 0
---- !u!114 &254286211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 254286206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cc6b4f44aa48444ba5fff471dcf8f41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RoomLight: {fileID: 2133540039}
-  pcLight: {fileID: 1844125742}
-  player: {fileID: 961504699}
-  lightbulb: {fileID: 752262520}
-  spotlight: {fileID: 9114470979230085100}
-  nextScene: 1
-  screw: {fileID: 254286214}
-  terminal: {fileID: 254286215}
 --- !u!65 &254286212
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -691,6 +671,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &254286216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254286206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c4901031391ba429c588c8aba310fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoomLight: {fileID: 2133540039}
+  pcLight: {fileID: 1844125742}
+  player: {fileID: 961504699}
+  lightbulb: {fileID: 752262520}
+  spotlight: {fileID: 9114470979230085100}
+  nextScene: 2
+  screw: {fileID: 254286214}
+  terminal: {fileID: 254286215}
 --- !u!1 &292513994
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,7 +820,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071069
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_RootOrder
@@ -832,7 +832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90.00001
+      value: -270
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -2514,7 +2514,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1420983045}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18e284f280ad80a499e96130c9b9a335, type: 3}
+  m_Script: {fileID: 11500000, guid: c46079f31c32d374c8debb74b53e4a34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 1844125742}

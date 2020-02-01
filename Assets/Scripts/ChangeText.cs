@@ -60,7 +60,7 @@ public class ChangeText : MonoBehaviour
 			if (textNum == 6)
 				screenText.text = ">>I would appreciate your understanding.\n>>And maybe I could use some help.\n>>Nah, forget that, this will work fine.\n>>Let me just send you on the right way.";
 			if (textNum == 7)
-				screenText.text = ">>I would appreciate your understanding.\n>>And maybe I could use some help.\n>>Nah, forget that, this will work fine.\n>>Let me just send you on the right way.\n>>Loading de_dust2...";
+				screenText.text = ">>I would appreciate your understanding.\n>>And maybe I could use some help.\n>>Nah, forget that, this will work fine.\n>>Let me just send you on the right way.\nLoading de_dust2...";
 			if (textNum == 8)
 				SceneManager.LoadScene(nextScene);
 			textNum += 1;
