@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ShootableBox : MonoBehaviour {
 
@@ -11,9 +12,10 @@ public class ShootableBox : MonoBehaviour {
 		//subtract damage amount when Damage function is called
 		currentHealth -= damageAmount;
 
-		if(currentHealth <= 0){
+		if (currentHealth <= 0){
 			this.GetComponent<Rigidbody>().isKinematic = false;	
 		}
+
 		//Check if health has fallen below zero
 		//if health has fallen below zero, deactivate it 
 
