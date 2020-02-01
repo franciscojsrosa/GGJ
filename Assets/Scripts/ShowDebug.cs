@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ShowDebug : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class ShowDebug : MonoBehaviour
 	public GameObject formerGun;
 	public GameObject brokenGun;
 	public GameObject explodedGun;
+
+	public int nextScene;
 
 	private bool done;
 
@@ -39,6 +42,22 @@ public class ShowDebug : MonoBehaviour
 				brokenGun.SetActive(true);
 				explodedGun.SetActive(true);
 				done = true;
+			}
+		}
+		else
+		{
+			int rot = 0;
+			foreach (Transform child in targets.transform)
+			{
+				Rigidbody rb = child.GetComponent<Rigidbody>();
+				if (!rb.isKinematic)
+				{
+					rot += 1;
+				}
+			}
+			if (rot >= 4)
+			{
+				SceneManager.LoadScene(nextScene);
 			}
 		}
     }

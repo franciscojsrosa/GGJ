@@ -44,7 +44,7 @@ public class ChangeText4 : MonoBehaviour
 			fixer.SetActive(true);
 		}
 		if (textNum == 8)
-			SceneManager.LoadScene(nextScene);
+			//SceneManager.LoadScene(nextScene);
 		textNum += 1;
 	}
 }
