@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.Effects;
 
 public class ShowDebug : MonoBehaviour
 {
 	public GameObject targets;
-	public GameObject debugRoom;
+    public GameObject DebugPortal;
 	public GameObject formerGun;
 	public GameObject brokenGun;
 	public GameObject explodedGun;
@@ -39,11 +40,17 @@ public class ShowDebug : MonoBehaviour
 			if (rot >= 3)
 			{
 				gun.GetComponent<RayCastShootComplete>().enabled = false;
-				debugRoom.SetActive(true);
+				DebugPortal.SetActive(true);                
 				formerGun.SetActive(false);
 				brokenGun.SetActive(true);
 				explodedGun.SetActive(true);
-				done = true;
+
+                GameObject explosionParticleSystem = FindObjectOfType<ParticleSystemMultiplier>().gameObject;
+                foreach(Transform system in explosionParticleSystem.transform)
+                {
+                    system.GetComponent<ParticleSystem>().Play();
+                }
+                done = true;
 			}
 		}
 		else
