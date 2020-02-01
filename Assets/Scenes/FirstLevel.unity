@@ -555,6 +555,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dustBulding2blend
       objectReference: {fileID: 0}
+    - target: {fileID: -6591274631530814222, guid: d2f71ab8c567dc74087ca7b96ad1f2a2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f5a6d488ee360844380e53fe368d30f0, type: 2}
     - target: {fileID: -6401506300877736302, guid: d2f71ab8c567dc74087ca7b96ad1f2a2,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -630,6 +635,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.456912
       objectReference: {fileID: 0}
+    - target: {fileID: -394910033932860428, guid: d2f71ab8c567dc74087ca7b96ad1f2a2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f5a6d488ee360844380e53fe368d30f0, type: 2}
+    - target: {fileID: 8982849674395727719, guid: d2f71ab8c567dc74087ca7b96ad1f2a2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f5a6d488ee360844380e53fe368d30f0, type: 2}
     - target: {fileID: -7108370614869529826, guid: d2f71ab8c567dc74087ca7b96ad1f2a2,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1624,13 +1639,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1424257441}
-  m_LocalRotation: {x: 0.29544383, y: 0.24443687, z: 0.30219057, w: 0.8727224}
+  m_LocalRotation: {x: 0.42225793, y: -0.48517302, z: -0.017448582, w: 0.76550704}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 21.589, y: 40.607002, z: 46.268}
+  m_LocalEulerAnglesHint: {x: 39.017002, y: -77.164, z: -34.176003}
 --- !u!1 &1615920128 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -9038606428553638533, guid: d2f71ab8c567dc74087ca7b96ad1f2a2,
