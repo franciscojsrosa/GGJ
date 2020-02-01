@@ -11,7 +11,6 @@ public class HPcomponent : MonoBehaviour
     {
         maxHP = 10;
         currHP = maxHP;
-        start = Time.time;
     }
 
     public void SetHP(int hp)
