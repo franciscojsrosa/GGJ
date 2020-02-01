@@ -10,6 +10,9 @@ public class TurnLight : MonoBehaviour
 	public GameObject player;
 	public GameObject screen;
 
+	public AudioSource turningOn;
+
+	public AudioSource buzz;
 	private Text screenText;
 
 	// Start is called before the first frame update
@@ -30,6 +33,8 @@ public class TurnLight : MonoBehaviour
 		{
 			light.SetActive(true);
 			screenText.text = ">>Debug mode activated\n>>AI Supervisor initiated\n>>Please press Left Mouse Button to Continue...";
+			turningOn.Play();
+			buzz.Play();
 		}
 	}
 }
