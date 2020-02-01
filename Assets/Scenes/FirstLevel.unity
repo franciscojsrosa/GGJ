@@ -6607,7 +6607,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &5640650435031636968
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7032,6 +7032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18e284f280ad80a499e96130c9b9a335, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonlight: {fileID: 0}
   light: {fileID: 5867173970979996163}
   player: {fileID: 0}
   screen: {fileID: 5867173972552809299}

@@ -44,8 +44,13 @@ public class TurnLight : MonoBehaviour
             light.SetActive(false);
             FindObjectOfType<ChangeText>().RoomLight.TurnOff();
             screenText.text = "";
-            //timer here ------------------------------------------------------------- 2 secondo
-            SceneManager.LoadScene("BeforeEnd");
+			StartCoroutine(EndCoroutine());
         }
+	}
+
+	IEnumerator EndCoroutine()
+	{
+		yield return new WaitForSeconds(2);
+		SceneManager.LoadScene(5);
 	}
 }
