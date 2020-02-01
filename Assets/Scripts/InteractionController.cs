@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InteractionController : MonoBehaviour
 {
-    Camera cam;
+    public float MaxInteractDistance;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +17,7 @@ public class InteractionController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E))
         {
             RaycastHit info;
-            if (Physics.Raycast(transform.position, transform.forward, out info))
+            if (Physics.Raycast(transform.position, transform.forward, out info, MaxInteractDistance))
             {
                 Interactable hit = info.collider.GetComponent<Interactable>();
                 if(hit != null)
