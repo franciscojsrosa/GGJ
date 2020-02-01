@@ -27,7 +27,7 @@ public class Sender : MonoBehaviour {
                 Vector3 positionOffset = player.transform.position - transform.position;
                 positionOffset = Quaternion.Euler(0, rotDiff, 0) * positionOffset;
                 var newPosition = receiver.transform.position + positionOffset;
-                player.transform.position = newPosition + Vector3.up * 0.8f;
+                player.transform.position = newPosition;
                 
 
                 player.SetActive(true);

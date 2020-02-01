@@ -65,6 +65,14 @@ public class RayCastShootComplete : MonoBehaviour {
 					health.Damage (gunDamage);
 				}
 
+				ShootableBox2 health2 = hit.collider.GetComponent<ShootableBox2>();
+
+				if (health2 != null)
+				{
+					// Call the damage function of that script, passing in our gunDamage variable
+					health2.Damage(gunDamage);
+				}
+
 				// Check if the object we hit has a rigidbody attached
 				if (hit.rigidbody != null)
 				{
