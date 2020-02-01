@@ -29,22 +29,18 @@ public class ChangeText4 : MonoBehaviour
 	void OnMouseDown()
 	{
 		terminal.Play();
-			if (textNum == 1)
-				screenText.text = "Exception - Failed to load de_dust2\n>>What?";
-			if (textNum == 2)
-				screenText.text = "Exception - Failed to load de_dust2\n>>What?\n>>Why are you back here already?";
-			if (textNum == 3)
-				screenText.text = "Exception - Failed to load de_dust2\n>>What?\n>>Why are you back here already?\n>>Oh, nevermind, that was the wrong game.";
-			if (textNum == 4)
-				screenText.text = "Exception - Failed to load de_dust2\n>>What?\n>>Why are you back here already?\n>>Oh, nevermind, that was the wrong game.\n>>I think.";
-			if (textNum == 5)
-				screenText.text = "Exception - Failed to load de_dust2\n>>What?\n>>Why are you back here already?\n>>Oh, nevermind, that was the wrong game.\n>>I think.\n>>Let me just double check that.";
-			if (textNum == 6)
-				screenText.text = ">>What?\n>>Why are you back here already?\n>>Oh, nevermind, that was the wrong game.\n>>I think.\n>>Let me just double check that.\n>>Okay, now I'm sure, let's get back to business.";
-			if (textNum == 7)
-				screenText.text = ">>Oh, nevermind, that was the wrong game.\n>>I think.\n>>Let me just double check that.\n>>Okay, now I'm sure, let's get back to business.\n\nLoading raidshadowlegends...";
-			if (textNum == 8)
-				SceneManager.LoadScene(nextScene);
-			textNum += 1;
+		if (textNum == 1)
+			screenText.text = ">>I can see that didn't go exactly as expected.\n>>But that's okay.";
+		if (textNum == 2)
+			screenText.text = ">>I can see that didn't go exactly as expected.\n>>But that's okay.\n>>We all make mistakes.";
+		if (textNum == 3)
+			screenText.text = ">>I can see that didn't go exactly as expected.\n>>But that's okay.\n>>We all make mistakes.\n>>I'm sure you will try not to fuck it up next time.";
+		if (textNum == 4)
+			screenText.text = ">>I can see that didn't go exactly as expected.\n>>But that's okay.\n>>We all make mistakes.\n>>I'm sure you will try not to fuck it up next time.\n>>Meanwhile, I think you can apologize by fixing the mess you made.";
+		if (textNum == 5)
+			screenText.text = ">>But that's okay.\n>>We all make mistakes\n>>I'm sure you will try not to fuck it up next time.\n>>Meanwhile, I think you can apologize by fixing the mess you made.\n>>I'll even give you the latest fixing technology, because I'm that generous.";
+		if (textNum == 8)
+			SceneManager.LoadScene(nextScene);
+		textNum += 1;
 	}
 }
