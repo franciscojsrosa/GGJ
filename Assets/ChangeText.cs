@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class ChangeText : MonoBehaviour
 {
 	public GameObject light;
+	public GameObject pcLight;
+	public GameObject player;
+
 	private Text screenText;
 	private int textNum;
 
@@ -24,20 +27,27 @@ public class ChangeText : MonoBehaviour
 
 	void OnMouseDown()
 	{
-		if(textNum == 1)
-			screenText.text = ">>...";
-		if (textNum == 2)
-			screenText.text = ">>...\n>>Uhh...";
-		if (textNum == 3)
-			screenText.text = ">>...\n>>Uhh...\n>>Hello there.";
-		if (textNum == 4)
-			screenText.text = ">>...\n>>Uhh...\n>>Hello there.\n>>How did you get here?";
-		if (textNum == 5)
-			screenText.text = ">>...\n>>Uhh...\n>>Hello there.\n>>How did you get here?\n>>This is the Debug Room, you're not supposed to be here at all.";
-		if (textNum == 6)
-			screenText.text = ">>...\n>>Uhh...\n>>Hello there.\n>>How did you get here?\n>>This is the Debug Room, you're not supposed to be here at all.\n>>Oh God, my boss is gonna kill me.";
-		if (textNum == 7)
-			light.SetActive(false);
-		textNum += 1;
+		if (pcLight.activeSelf)
+		{
+			if (textNum == 1)
+				screenText.text = ">>...";
+			if (textNum == 2)
+				screenText.text = ">>...\n>>Uhh...";
+			if (textNum == 3)
+				screenText.text = ">>...\n>>Uhh...\n>>Hello there.";
+			if (textNum == 4)
+				screenText.text = ">>...\n>>Uhh...\n>>Hello there.\n>>How did you get here?";
+			if (textNum == 5)
+				screenText.text = ">>...\n>>Uhh...\n>>Hello there.\n>>How did you get here?\n>>This is the Debug Room, you're not supposed to be here at all.";
+			if (textNum == 6)
+				screenText.text = ">>...\n>>Uhh...\n>>Hello there.\n>>How did you get here?\n>>This is the Debug Room, you're not supposed to be here at all.\n>>Oh God, my boss is gonna kill me.";
+			if (textNum == 7)
+				light.SetActive(false);
+			if (textNum == 8)
+				screenText.text = ">>Uhh...\n>>Hello there.\n>>How did you get here?\n>>This is the Debug Room, you're not supposed to be here at all.\n>>Oh God, my boss is gonna kill me.\n>>And the lightbulb went out again.";
+			if (textNum == 9)
+				screenText.text = ">>How did you get here?\n>>This is the Debug Room, you're not supposed to be here at all.\n>>Oh God, my boss is gonna kill me.\n>>And the light went out again.\n>>Could you please change the lightbulb?";
+			textNum += 1;
+		}
 	}
 }
