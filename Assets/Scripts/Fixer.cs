@@ -35,7 +35,7 @@ public class Fixer : MonoBehaviour
 		if (gunFragment != null && (snapPosition2.transform.position - gunFragment.transform.position).sqrMagnitude < 1 && snap2)
 		{
 			gunFragment.transform.parent = null;
-			gun.GetComponent<MoveObject>().isHolding = false;
+			gunFragment.GetComponent<MoveObject>().isHolding = false;
 			gunFragment.transform.position = snapPosition2.transform.position;
 			gunFragment.transform.rotation = new Quaternion(180f, 0f, 0f, 0f);
 			snap2 = false;
