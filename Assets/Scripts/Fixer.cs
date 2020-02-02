@@ -51,6 +51,7 @@ public class Fixer : MonoBehaviour
 			fixedGun.SetActive(true);
 			snap1 = true;
 			snap2 = true;
+            FindObjectOfType<AKcontroller>().notBroken = true;
 		}
 	}
 }
