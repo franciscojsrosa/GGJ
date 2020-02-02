@@ -22,7 +22,7 @@ public class Information : MonoBehaviour
 		RaycastHit hit = new RaycastHit();
 		if (
 			!Physics.Raycast(mainCamera.ScreenPointToRay(Input.mousePosition).origin,
-							 mainCamera.ScreenPointToRay(Input.mousePosition).direction, out hit, 3,
+							 mainCamera.ScreenPointToRay(Input.mousePosition).direction, out hit, 2,
 							 Physics.DefaultRaycastLayers))
 		{
 			info.text = "";
