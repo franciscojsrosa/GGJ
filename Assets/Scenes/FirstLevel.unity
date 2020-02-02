@@ -4585,6 +4585,11 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.4125189
       objectReference: {fileID: 0}
+    - target: {fileID: 3490168855727708766, guid: 771f1791a0a63274f9f559cd1982ce79,
+        type: 3}
+      propertyPath: notInPlace
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4835287754763273909, guid: 771f1791a0a63274f9f559cd1982ce79,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

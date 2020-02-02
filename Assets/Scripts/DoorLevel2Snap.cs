@@ -8,6 +8,7 @@ public class DoorLevel2Snap : SnapToTarget
     public override void Snap()
     {
         base.Snap();
+		this.GetComponent<DebugDoor>().notInPlace = false;
         FindObjectOfType<ChangeMesh>().GetADoor();
     }
 }
