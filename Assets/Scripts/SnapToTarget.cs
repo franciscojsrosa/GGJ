@@ -30,6 +30,7 @@ public class SnapToTarget : MonoBehaviour
     
     public virtual void Snap()
     {
+        gameObject.GetComponent<MoveObject>().enabled = false;
         //Object held has the hand as it's parent so remove it
         transform.parent = null;
         

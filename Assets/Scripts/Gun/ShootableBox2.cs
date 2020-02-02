@@ -8,7 +8,11 @@ public class ShootableBox2 : MonoBehaviour {
 	public int currentHealth = 3;
     public HPcomponent hp;
 
-	public void Damage(int damageAmount)
+    private void Start()
+    {
+        hp.SetHP(currentHealth);
+    }
+    public void Damage(int damageAmount)
 	{
         hp.LowerHP(damageAmount);
         if (hp.noHP)
@@ -16,10 +20,6 @@ public class ShootableBox2 : MonoBehaviour {
             this.GetComponent<Rigidbody>().isKinematic = false;
         }
 
-		//Check if health has fallen below zero
-		//if health has fallen below zero, deactivate it 
-
-		//gameObject.SetActive (false);
 	}
 
 	void Update(){	

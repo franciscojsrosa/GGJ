@@ -51,6 +51,8 @@ public class TurnLight : MonoBehaviour
 	IEnumerator EndCoroutine()
 	{
 		yield return new WaitForSeconds(2);
-		SceneManager.LoadScene(5);
-	}
+		SceneManager.LoadScene(6);
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene(5);
+    }
 }
