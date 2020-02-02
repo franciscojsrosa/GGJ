@@ -20,6 +20,6 @@ public class ToMenu : MonoBehaviour
 	IEnumerator EndCoroutine()
 	{
 		yield return new WaitForSeconds(5);
-		SceneManager.LoadScene(6);
+		SceneManager.LoadScene(7);
 	}
 }
