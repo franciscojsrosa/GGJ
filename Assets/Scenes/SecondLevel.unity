@@ -4264,6 +4264,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5246813741425122167, guid: 1827db70e6d0f1d448a262f80ab17980,
+        type: 3}
+      propertyPath: m_TagString
+      value: Grab
+      objectReference: {fileID: 0}
     - target: {fileID: 9118439682477042020, guid: 1827db70e6d0f1d448a262f80ab17980,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5528,7 +5533,7 @@ GameObject:
   - component: {fileID: 857243732}
   m_Layer: 0
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: Interact
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
