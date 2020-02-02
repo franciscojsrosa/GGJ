@@ -9,6 +9,7 @@ public class DoorLevel2Snap : SnapToTarget
     {
         base.Snap();
 		this.GetComponent<DebugDoor>().notInPlace = false;
+		this.tag = "Interact";
         FindObjectOfType<ChangeMesh>().GetADoor();
     }
 }

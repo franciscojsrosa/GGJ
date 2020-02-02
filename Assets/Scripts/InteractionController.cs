@@ -14,7 +14,7 @@ public class InteractionController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
+        if(Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
         {
             RaycastHit info;
             if (Physics.Raycast(transform.position, transform.forward, out info, MaxInteractDistance))
