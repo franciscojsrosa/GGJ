@@ -15,7 +15,4 @@ public class ChangeMesh : MonoBehaviour
         GetComponent<MeshCollider>().sharedMesh = mesh2;
     }
 
-    void Update()
-    {
-    }
 }
