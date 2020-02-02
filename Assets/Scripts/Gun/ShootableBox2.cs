@@ -14,12 +14,14 @@ public class ShootableBox2 : MonoBehaviour {
     }
     public void Damage(int damageAmount)
 	{
-        hp.LowerHP(damageAmount);
-        if (hp.noHP)
-        {
-            this.GetComponent<Rigidbody>().isKinematic = false;
-        }
-
+		if (this.transform.Find("Health") != null)
+		{
+			hp.LowerHP(damageAmount);
+			if (hp.noHP)
+			{
+				this.GetComponent<Rigidbody>().isKinematic = false;
+			}
+		}
 	}
 
 	void Update(){	
