@@ -2,31 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActivateLightbulb : MonoBehaviour
+public class ActivateLightbulb : SnapToTarget
 {
-    private Transform target;
-    private void Start()
+    public override void Start()
     {
-        target = FindObjectOfType<LightbulbHolder>().transform;
+        base.Start();
+        SnapTarget = FindObjectOfType<LightbulbHolder>().transform;
+        SnapDistance = 0.5f;
     }
-    void Update()
+    public override void Snap()
     {
-
-        if ((target.position - transform.position).sqrMagnitude < 0.85)
+        base.Snap();
+        foreach (Transform child in transform)
         {
-            transform.parent = null;
-            transform.position = target.position;
-            transform.rotation = new Quaternion(180f, 0f, 0f, 0f);
-            foreach (Transform child in transform)
+            foreach (Transform child2 in child)
             {
-                foreach (Transform child2 in child)
-                {
-                    child2.gameObject.SetActive(true);
-                }
+                child2.gameObject.SetActive(true);
             }
-            FindObjectOfType<ChangeText>().LightIsHere();
         }
+        FindObjectOfType<ChangeText>().LightIsHere();
     }
-
-      
 }
