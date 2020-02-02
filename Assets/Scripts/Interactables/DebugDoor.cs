@@ -5,6 +5,8 @@ using UnityEngine;
 public class DebugDoor : Interactable
 {
 
+	public bool notInPlace;
+
     Animator AnimController;
     // Start is called before the first frame update
     void Start()
@@ -14,8 +16,11 @@ public class DebugDoor : Interactable
 
     public override void Interact()
     {
-        base.Interact();
-        Debug.Log("lmao");
-        AnimController.Play("DoorOpen");
+		if (!notInPlace)
+		{
+			base.Interact();
+			Debug.Log("lmao");
+			AnimController.Play("DoorOpen");
+		}
     }
 }

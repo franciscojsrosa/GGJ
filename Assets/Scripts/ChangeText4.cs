@@ -54,10 +54,12 @@ public class ChangeText4 : MonoBehaviour
 			if (textNum == 6)
 				screenText.text = ">>I'm sure you will try not to fuck it up next time.\n>>Meanwhile, I think you can apologize by fixing the mess you made.\n>>I'll even give you the latest fixing technology, because I'm that generous.\n>>You can't shoot the last target?";
 			if (textNum == 7)
-				screenText.text = ">>Meanwhile, I think you can apologize by fixing the mess you made.\n>>I'll even give you the latest fixing technology, because I'm that generous.\n>>You can't shoot the last target?\n>>Because of a window?";
+				screenText.text = ">>Meanwhile, I think you can apologize by fixing the mess you made.\n>>I'll even give you the latest fixing technology, because I'm that generous.\n>>You can't shoot the last target?\n>>You can clearly see it from the window.";
 			if (textNum == 8)
+				screenText.text = ">>I'll even give you the latest fixing technology, because I'm that generous.\n>>You can't shoot the last target?\n>>You can clearly see it from the window.\n>>I'm sure you can shoot through a window, that would make sense.";
+			if (textNum == 9)
 			{
-				screenText.text = ">>I'll even give you the latest fixing technology, because I'm that generous.\n>>You can't shoot the last target?\n>>Because of a window?\n>>Just get inside the room, you idiot.";
+				screenText.text = ">>You can't shoot the last target?\n>>You can clearly see it from the window.\n>>I'm sure you can shoot through a window, that would make sense.\n>>And if you can't, just walk inside the room, dummy.";
 				door.SetActive(true);
 			}
 			textNum += 1;
