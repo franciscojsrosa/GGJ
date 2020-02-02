@@ -9,12 +9,13 @@ public class DebugDoor : Interactable
     // Start is called before the first frame update
     void Start()
     {
-        AnimController = GetComponent<Animator>();
+        AnimController = transform.parent.parent.GetComponent<Animator>();
     }
 
     public override void Interact()
     {
         base.Interact();
+        Debug.Log("lmao");
         AnimController.Play("DoorOpen");
     }
 }

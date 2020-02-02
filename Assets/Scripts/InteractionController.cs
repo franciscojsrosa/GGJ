@@ -20,6 +20,8 @@ public class InteractionController : MonoBehaviour
             if (Physics.Raycast(transform.position, transform.forward, out info, MaxInteractDistance))
             {
                 Interactable hit = info.collider.GetComponent<Interactable>();
+
+                Debug.Log(info.collider.gameObject);
                 if(hit != null)
                 {
                     hit.Interact();

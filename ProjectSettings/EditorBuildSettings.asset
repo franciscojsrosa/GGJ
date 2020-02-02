@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/PCTutorial3.unity
     guid: 5284c8e884225294abe46203f1032470
   - enabled: 1
+    path: Assets/Scenes/SecondLevel.unity
+    guid: cdb7c3d6f8574e24a96171d534f88df1
+  - enabled: 1
     path: Assets/Scenes/TheEnd.unity
     guid: b594beeb33297da4eaa8a9ed21f351d2
   - enabled: 1
@@ -26,7 +29,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 9b81b228ec4263c43a53a43b53c9eff8
-  - enabled: 1
-    path: Assets/Scenes/SecondLevel.unity
-    guid: cdb7c3d6f8574e24a96171d534f88df1
   m_configObjects: {}
