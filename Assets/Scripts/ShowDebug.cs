@@ -44,6 +44,7 @@ public class ShowDebug : MonoBehaviour
 				formerGun.SetActive(false);
 				brokenGun.SetActive(true);
 				explodedGun.SetActive(true);
+                explodedGun.transform.position = formerGun.transform.position;
 
                 GameObject explosionParticleSystem = FindObjectOfType<ParticleSystemMultiplier>().gameObject;
                 foreach(Transform system in explosionParticleSystem.transform)
