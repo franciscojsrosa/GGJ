@@ -4,27 +4,22 @@ using UnityEngine;
 
 public class ActivateLightbulb : SnapToTarget
 {
-    void Start()
+    public override void Start()
     {
+        base.Start();
         SnapTarget = FindObjectOfType<LightbulbHolder>().transform;
         SnapDistance = 0.5f;
     }
-    void Update()
+    public override void Snap()
     {
-
-        if (WithinRange())
+        base.Snap();
+        foreach (Transform child in transform)
         {
-            Snap();
-            foreach (Transform child in transform)
+            foreach (Transform child2 in child)
             {
-                foreach (Transform child2 in child)
-                {
-                    child2.gameObject.SetActive(true);
-                }
+                child2.gameObject.SetActive(true);
             }
-            FindObjectOfType<ChangeText>().LightIsHere();
         }
+        FindObjectOfType<ChangeText>().LightIsHere();
     }
-
-      
 }

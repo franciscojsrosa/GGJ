@@ -8,17 +8,32 @@ public class SnapToTarget : MonoBehaviour
 
     public float SnapDistance;
 
+    Transform Parent;
+    public virtual void Start()
+    {
+        if (transform.parent != null)
+            Parent = transform.parent;
+    }
+
+    public virtual void Update()
+    {
+        if (WithinRange())
+        {
+            Snap();
+        }
+    }
+
     public bool WithinRange()
     {
         return (transform.position - SnapTarget.position).sqrMagnitude < SnapDistance * SnapDistance;
     }
     
-    public void Snap()
+    public virtual void Snap()
     {
         //Object held has the hand as it's parent so remove it
         transform.parent = null;
-
+        
         transform.position = SnapTarget.position;
-        transform.rotation = SnapTarget.rotation;
+        transform.rotation = SnapTarget.rotation;  
     }
 }
