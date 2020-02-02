@@ -9,7 +9,7 @@ public class DebugDoor : Interactable
     // Start is called before the first frame update
     void Start()
     {
-        AnimController = transform.parent.parent.GetComponent<Animator>();
+        AnimController = GetComponent<Animator>();
     }
 
     public override void Interact()
