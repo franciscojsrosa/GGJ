@@ -458,7 +458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 350355289}
   fixer: {fileID: 0}
-  nextScene: 5
+  nextScene: 7
   terminal: {fileID: 254286215}
 --- !u!65 &254286212
 BoxCollider:

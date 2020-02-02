@@ -6903,7 +6903,7 @@ PrefabInstance:
         type: 3}
       propertyPath: lightbulb
       value: 
-      objectReference: {fileID: 131495442}
+      objectReference: {fileID: 33744231}
     - target: {fileID: 6642973977314092444, guid: 70a6b0c279b131547b7f11428a0183b0,
         type: 3}
       propertyPath: m_IsActive

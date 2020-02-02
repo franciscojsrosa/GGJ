@@ -1462,6 +1462,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ff6ec254f451714a8932ff480ff490d, type: 3}
+--- !u!1 &965338705 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5915011148276121595, guid: 2ff6ec254f451714a8932ff480ff490d,
+    type: 3}
+  m_PrefabInstance: {fileID: 965338704}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &965338706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965338705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0804b570ec01d84c9e6c61cb6d40edc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redstufs: {fileID: 2100000, guid: fbf44dab165315d43bec2fa1e6c9b0bf, type: 2}
+  thegudstuf: {fileID: 2100000, guid: ceb994316df6c9a43b378204c69fa7c2, type: 2}
 --- !u!1 &1037710708
 GameObject:
   m_ObjectHideFlags: 0
@@ -2050,6 +2070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c309acfb9f587a40b4dcd7b217851ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonlight: {fileID: 965338706}
   light: {fileID: 1844125742}
   player: {fileID: 350355290}
   screen: {fileID: 254286206}

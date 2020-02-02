@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TurnLight6 : MonoBehaviour
 {
+	public ChangeMaterial buttonlight;
 	public GameObject light;
 	public GameObject player;
 	public GameObject screen;
@@ -27,5 +29,20 @@ public class TurnLight6 : MonoBehaviour
 	void Update()
 	{
 
+	}
+
+	void OnMouseDown()
+	{
+		buttonlight.ChangeMat();
+		light.SetActive(false);
+		//FindObjectOfType<ChangeText>().RoomLight.TurnOff();
+		screenText.text = "";
+		StartCoroutine(EndCoroutine());
+	}
+
+	IEnumerator EndCoroutine()
+	{
+		yield return new WaitForSeconds(2);
+		SceneManager.LoadScene(4);
 	}
 }

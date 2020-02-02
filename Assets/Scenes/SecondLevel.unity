@@ -949,7 +949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targets: {fileID: 224384152}
   debugRoom: {fileID: 88835827}
-  nextScene: 4
+  nextScene: 8
 --- !u!1 &240776933
 GameObject:
   m_ObjectHideFlags: 0
