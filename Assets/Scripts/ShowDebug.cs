@@ -12,15 +12,18 @@ public class ShowDebug : MonoBehaviour
 	public GameObject brokenGun;
 	public GameObject explodedGun;
 	public GameObject gun;
+	public GameObject door;
 
 	public int nextScene;
 
 	private bool done;
+	private bool doorActive;
 
 	// Start is called before the first frame update
 	void Start()
     {
-		done = false;   
+		done = false;
+		doorActive = false;
     }
 
     // Update is called once per frame
@@ -37,7 +40,7 @@ public class ShowDebug : MonoBehaviour
 					rot += 1;
 				}
 			}
-			if (rot >= 3)
+			if (rot >= 2)
 			{
 				gun.GetComponent<RayCastShootComplete>().enabled = false;
 				DebugPortal.SetActive(true);                
@@ -64,7 +67,12 @@ public class ShowDebug : MonoBehaviour
 					rot += 1;
 				}
 			}
-			if (rot >= 4)
+			if (rot == 3 && !doorActive)
+			{
+				door.GetComponent<Rigidbody>().isKinematic = false;
+				doorActive = true;
+			}
+			else if (rot >= 4)
 			{
 				StartCoroutine(EndCoroutine());
 			}
